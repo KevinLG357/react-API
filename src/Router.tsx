@@ -14,10 +14,8 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/episodes" element={<EpisodesList />} />
         <Route path="/api-details/:id" element={<ApiDetails />} />
-        <Route path="/home/api-details/:id" element={<ApiDetails />} />
       </Routes>
       <Footer />
     </CharacterProvider>
