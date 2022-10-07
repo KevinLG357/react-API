@@ -33,7 +33,7 @@ export const Home = () => {
             onChange={filter}
           />
         </div>
-        <div className="lg:container lg:mx-auto my-20 grid grid-cols-5 gap-2">
+        <div className="mx-auto my-20 grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2">
           {characters.map((person) => (
             <ApiCard
               key={person.id}
