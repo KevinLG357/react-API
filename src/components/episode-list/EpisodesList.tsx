@@ -23,12 +23,12 @@ export class EpisodesList extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="container mb-5">
-        <h1 className="text-center font-bold my-8 text-3xl">Episodes</h1>
+      <div className="container mb-5 pb-5">
+        <h1 className="text-center font-bold my-7 text-3xl">Episodes</h1>
         <div className="grid gap-1 grid-cols-4">
           {this.state.episodes.map((episode: any, index: number) => (
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="max-w-sm overflow-hidden shadow-lg rounded-md border border-purple-800">
+              <div className="max-w-sm overflow-hidden shadow-lg rounded-md border-2 border-gray-400">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">
                     {index + 1}.- {episode.name}

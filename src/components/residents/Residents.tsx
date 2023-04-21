@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export const Residents = (data: any) => {
-
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       {data.location && (

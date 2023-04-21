@@ -52,6 +52,8 @@ export function CharacterProvider({ children }: props) {
 
   const getLocationByUrl = async (url: any) => {
     try {
+      setResidents([]);
+      
       await axios.get(url).then((res) => {
         setResidents(res.data.residents);
       });
@@ -61,8 +63,10 @@ export function CharacterProvider({ children }: props) {
   };
 
   const getResidents = async (url: any) => {
-    let information: any = [];
     try {
+      let information: any = [];
+      setResults([]);
+
       for (let i = 0; i < url.length; i++) {
         const response = await axios.get(url[i]);
         information.push(response.data);
